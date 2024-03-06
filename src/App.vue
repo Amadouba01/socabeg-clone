@@ -1,14 +1,15 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/Preview.vue';
+import whyUs from './components/whyUs.vue';
 </script>
 
 <template>
   <div id="app">
     <header>
-      <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+      <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
 
       <div class="wrapper">
-        <HelloWorld msg="You did it!" />
+        <!-- <HelloWorld msg="You did it!" /> -->
 
         <nav>
           <router-link to="/">Home</router-link>
@@ -21,10 +22,12 @@ import HelloWorld from './components/HelloWorld.vue'
   </div>
 </template>
 
-<style scoped>
+<style lang="scss">
+
 header {
   line-height: 1.5;
   max-height: 100vh;
+
 }
 
 .logo {
