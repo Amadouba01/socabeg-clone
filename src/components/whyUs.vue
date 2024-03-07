@@ -37,7 +37,26 @@
     .grid-container{
         display: flex;
         flex-direction: row;
+        align-content: center;
+        .whyUs-leftpart{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .whyUs-title{
+                h2{
+                    font-size: 1.953rem;
+                    font-weight: 800;
+                }
+            }
 
+        }
+        .whyUs-rightpart{
+            img{
+                max-width: 100%;
+    height: auto;
+    display: block
+            }
+        }
     }
 }
 </style>
