@@ -29,7 +29,8 @@ export default {
     display: flex;
     align-items: center;
     gap: 10px;
-    a { 
+
+    a {
         text-decoration: none;
     }
 }

@@ -150,9 +150,10 @@ export default {
     .container{
     .grid-container {
         .card-content {
-           
+           overflow:scroll;
             .card{
             display: flow;
+            
             }
             
     }

@@ -12,13 +12,17 @@
                                 <img src="../assets/images/rea1.jpeg" alt="">
                             </a>
                         </div>
-                        <div class="titre">
-                            <a href="#">
-                                <h2>Construction de logements aux Almadies </h2>
-                            </a>
-                        </div>
-                        <div class="details">
-                            <viewdetails />
+                        <div class="text">
+                            <div class="titre">
+                                <a href="#">
+                                    <h2>Construction de logements aux Almadies </h2>
+                                </a>
+                            </div>
+                            <div class="details">
+                                <a href="#">
+                                    <viewdetails />
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="card-item">
@@ -27,13 +31,17 @@
                                 <img src="../assets/images/rea2.webp" alt="">
                             </a>
                         </div>
-                        <div class="titre">
-                            <a href="#">
-                                <h2>Construction de plus de 1000 logements test</h2>
-                            </a>
-                        </div>
-                        <div class="details">
-                            <viewdetails />
+                        <div class="text">
+                            <div class="titre">
+                                <a href="#">
+                                    <h2>Construction de plus de 1000 logements test</h2>
+                                </a>
+                            </div>
+                            <div class="details">
+                                <a href="#">
+                                    <viewdetails />
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="card-item">
@@ -42,13 +50,17 @@
                                 <img src="../assets/images/rea3.webp" alt="">
                             </a>
                         </div>
-                        <div class="titre">
-                            <a href="#">
-                                <h2>Viabilisation de plus de 4000 parcelles </h2>
-                            </a>
-                        </div>
-                        <div class="details">
-                            <viewdetails />
+                        <div class="text">
+                            <div class="titre">
+                                <a href="#">
+                                    <h2>Viabilisation de plus de 4000 parcelles </h2>
+                                </a>
+                            </div>
+                            <div class="details">
+                                <a href="#">
+                                    <viewdetails />
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="card-item">
@@ -57,13 +69,17 @@
                                 <img src="../assets/images/rea4.webp" alt="">
                             </a>
                         </div>
-                        <div class="titre">
-                            <a href="#">
-                                <h2>Construction de plus de 1000 logements </h2>
-                            </a>
-                        </div>
-                        <div class="details">
-                            <viewdetails />
+                        <div class="text">
+                            <div class="titre">
+                                <a href="#">
+                                    <h2>Construction de plus de 1000 logements </h2>
+                                </a>
+                            </div>
+                            <div class="details">
+                                <a href="#">
+                                    <viewdetails />
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="card-item">
@@ -72,14 +88,19 @@
                                 <img src="../assets/images/rea3.webp" alt="">
                             </a>
                         </div>
-                        <div class="titre">
-                            <a href="#">
-                                <h2> 1992-1994: Construction de Guérite dans les régions pour le compte de la SONATEL
-                                </h2>
-                            </a>
-                        </div>
-                        <div class="details">
-                            <viewdetails />
+                        <div class="text">
+                            <div class="titre">
+                                <a href="#">
+                                    <h2> 1992-1994: Construction de Guérite dans les régions pour le compte de la
+                                        SONATEL
+                                    </h2>
+                                </a>
+                            </div>
+                            <div class="details">
+                                <a href="#">
+                                    <viewdetails />
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="card-item">
@@ -88,20 +109,26 @@
                                 <img src="../assets/images/rea6.webp" alt="">
                             </a>
                         </div>
-                        <div class="titre">
-                            <a href="#">
-                                <h2>124 logements à la cité Socabeg Rufisque II</h2>
-                            </a>
-                        </div>
-                        <div class="details">
-                            <viewdetails />
+                        <div class="text">
+                            <div class="titre">
+                                <a href="#">
+                                    <h2>124 logements à la cité Socabeg Rufisque II</h2>
+                                </a>
+                            </div>
+                            <div class="details">
+                                <a href="#">
+                                    <viewdetails />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="voirPlus">
-                    <a href="#">
-                        <h2>Voir plus de réalisations</h2>
-                    </a>
+                <div class="seeMore">
+                    <div class="text">
+                        <a href="#">
+                            <h2>Voir plus de réalisations</h2>
+                        </a>
+                    </div>
                     <span class="miniLogo">
                         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"
                             data-v-04928fba="">
@@ -140,9 +167,35 @@ export default {
             position: relative;
 
             .card-item {
+                --tw-bg-opacity: 1;
                 grid-column-end: span 4;
                 display: flex;
                 flex-direction: column;
+
+                .text {
+                    padding: 10px;
+                    background-color: rgb(228 237 242 / var(--tw-bg-opacity));
+
+
+                    .titre {
+                        h2 {
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            font-size: 1.25rem;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .details {
+                        a {
+                            font-size: 0.8rem;
+                            font-weight: 400;
+                            color: red;
+                        }
+                    }
+                }
 
                 .image {
                     img {
@@ -158,18 +211,28 @@ export default {
             }
         }
 
-        .voirPlus {
-            border: 2px solid;
+        .seeMore {
+
+            display: flex;
+            border: 2px solid #01418a4d;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+            margin: 10px auto;
 
             a {
                 text-align: center;
                 text-decoration: none;
-                color: red;
+
 
                 h2 {
                     justify-content: center;
                     align-items: center;
-
+                    font-family: Poppins-ExtraBold, sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    --tw-text-opacity: 1;
+                    color: rgb(205 11 17 / var(--tw-text-opacity))
                 }
             }
         }
@@ -178,5 +241,25 @@ export default {
 
 a {
     text-decoration: none;
+}
+//responsive
+@media (max-width: 1024px) {
+
+
+#achievements {
+
+.container{
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        .card{
+        display: flow;
+        
+        }
+        
+}
+}
+}
 }
 </style>
