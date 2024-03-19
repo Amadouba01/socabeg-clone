@@ -16,4 +16,4 @@
 
 <style lang="scss" scoped>
 
-</style>
+</style>./PropertyPromotion.vue

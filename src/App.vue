@@ -14,6 +14,7 @@ import whyUs from './components/whyUs.vue';
         <nav>
           <router-link to="/">Home</router-link>
           <router-link to="/about">About</router-link>
+          <router-link to="/PropertyPromotion">PropertyPromotion</router-link>
         </nav>
       </div>
     </header>
