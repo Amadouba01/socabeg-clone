@@ -1,19 +1,27 @@
 <template>
     <div>
-        <section id="property-promotion-section">
-            <div class="property-promotion container">
-                
-            </div>
-        </section>
-
+      <div id="PropertyPromotion">
+        <immoListing/>     
+      <immoItem/>   
+      </div>
+                                                                                                 
     </div>
-</template>
-
-<script>
+  </template>
+  
+  <script>
+  import immoListing from '@/components/immoListing.vue' ;
+  import immoItem from '@/components/immoItem.vue';
+  
     export default {
-    }
-</script>
-
-<style lang="scss" scoped>
-
-</style>./PropertyPromotion.vue
+    components: { immoListing, immoItem},
+      
+    };
+  
+  </script>
+  
+  <style lang="scss" scoped>
+  #PropertyPromotion{
+    background-color: rgb(245 245 245 );
+    
+  }
+  </style>

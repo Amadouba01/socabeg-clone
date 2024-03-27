@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import PropertyPromotion from '../views/PropertyPromotion.vue'
+
+
 Vue.use(VueRouter)
 
 const router = new VueRouter({
@@ -22,9 +24,9 @@ const router = new VueRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
-      path: '/PropertyPromotion',
+      path: '/property-promotion',
       name: 'PropertyPromotion',
-      component: PropertyPromotion
+      component: PropertyPromotion,
     },
     
     

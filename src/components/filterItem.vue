@@ -1,11 +1,11 @@
 <template>
     <div>
-        <h3> {{ filter }}</h3>
+        <button> <h3> {{ filter }} </h3> </button>
     </div>
 </template>
 
 <script>
-   export default {
+export default {
     props: {
         filter: {
             type: String,
@@ -17,5 +17,4 @@
 </script>
 
 <style lang="scss" scoped>
-
 </style>
