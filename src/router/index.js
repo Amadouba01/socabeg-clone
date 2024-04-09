@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import PropertyPromotion from '../views/PropertyPromotion.vue'
+import PropertyDetailsView from '../views/PropertyDetailsView.vue'
 
 
 Vue.use(VueRouter)
@@ -15,7 +16,7 @@ const router = new VueRouter({
       name: 'home',
       component: HomeView
     },
-    {
+    {  
       path: '/about',
       name: 'about',
       // route level code-splitting
@@ -27,6 +28,11 @@ const router = new VueRouter({
       path: '/property-promotion',
       name: 'PropertyPromotion',
       component: PropertyPromotion,
+    },
+    {
+      path: '/property-promotion/:slug',
+      name: 'PropertyDetailsView',
+      component: PropertyDetailsView,
     },
     
     
